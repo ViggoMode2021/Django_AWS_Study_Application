@@ -1,0 +1,68 @@
+<style>
+
+h1{
+font-family: Arial, Helvetica, sans-serif;
+color: orange;
+
+}
+
+h2{
+
+font-family: lucinda;
+color: orange;
+
+}
+
+li{
+
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+font-size: 20px;
+
+}
+
+</style>
+
+<title>EC2</title>
+
+<center>
+<h1>EC2 (Elastic Compute Cloud)</h1>
+    </center>
+
+<center>
+<a href="https://aws.amazon.com/ec2/"><img src=https://imgs.search.brave.com/KycYCqKHaZnDeG8ig9ZieXcKs7H7Z-590xlFYH1WqLY/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5y/LUtSVWFTUzdJR0Qz/VU9GTzEzc0dBSGFI/YSZwaWQ9QXBp>
+</a>
+
+    <h2>EC2 key points:</h2>
+
+<ul>
+    <li>Provision instances of virtual servers in the cloud</li>
+    <br>
+    <li>Configure EC2 instance by selecting: OS, Storage, Memory, Network Throughput and Linux is the most popular instance type</li>
+    <br>
+    <li>Select an AMI (Amazon Machine Image) as the specific instance type</li>
+    <br>
+    <li>Instance types will typically double in price and key attributes</li>
+    <br>
+    <li>Placement Groups allow for organization of instances to ensure performance, communication, and reliability</li>
+    <br>
+    <li>Instance profiles are a container for an IAM role to pass IAM credentials to an EC2 instance during startup</li>
+    <br>
+    <li>Security Group is a firewall that allows inbound and outbound rules for instance traffic</li>
+    <br>
+    <li>SSH (Secure Shell) is a networking tool that allows users to enter their instance from the command line. Must need to create a key pair during start up typically in order to access.</li>
+    <br>
+    <li>SSH (Secure Shell) requires port 222 to be open for inbound traffic. This can be configured in the EC2 instance's security group.</li>
+    <br>
+    <li>UserData is a script that will run automatically when creating an instance. Used to configure settings and download packages to ensure customization prior to instance creation without need to SSH</li>
+    <br>
+    <li>MetaData contains metadata about an instance. When SSHd into an instance, curl http://169.254.169.254/latest/meta-data in order to access metadata.</li>
+    <br>
+    <li>MetaData could be instance type, ip addresses etc.</li>
+</ul>
+
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="spFrame62f5976e2313e" src="https://www.sporcle.com/framed/?v=8&pm&gid=26f934bdf217&fid=62f5976e2313e&width=920" style="width:100%;"></iframe><script type="text/javascript" src="https://www.sporcle.com/embed/embed.js?v=62f5976e2313e"></script>
+<br>
+<br>
+<br>
+<iframe src="https://quizlet.com/268028026/flashcards/embed?i=46nell&x=1jj1" height="500" width="100%" style="border:0"></iframe>

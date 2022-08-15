@@ -1,0 +1,47 @@
+<style>
+
+h1{
+
+font-family: Arial, Helvetica, sans-serif;
+color: orange;
+
+}
+
+h2{
+
+font-family: lucinda;
+color: orange;
+
+}
+
+li{
+
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+font-size: 20px;
+
+}
+
+</style>
+
+<title>Kinesis</title>
+
+<body>
+
+<center>
+<h1>Kinesis</h1>
+    </center>
+
+<center>
+<a href="https://aws.amazon.com/kinesis/"><img src=https://imgs.search.brave.com/HhY70o5CzlMyotnjSzVfinw0jA4izo1N_hbPYcK1FJM/rs:fit:206:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5M/bHRKQlhqN3VPMUR2/a0NfUE9GcGxBRGpF/UyZwaWQ9QXBp>
+</a></center>
+
+<h2>Kinesis key points:</h2>
+
+<ul>
+    <li>Kinesis collects, process, and analyzes real-time streaming data in the cloud</li><br>
+    <li>Kinesis Data Streams: Pay per running shard, data can persist within the stream, data is ordered and every consumer keep its own position. Consumers have to be manually added (coded), data persists for 24 hours (default) to 168 hours</li>
+    <li>Kinesis Firehose: Pay for only the data ingested, data immediately disappears once processed. Consumer of choice is from a predefined set of services: S3, Redshift, Elasticsearch or Splunk</li><br>
+    <li>Kinesis Data Analytics - allows performance of queries in real-time. Needs a Kinesis Data Streams/Firehose as the input and output.</li><br>
+    <li>Kinesis Video Analytics securely ingests and stores video and audio encoded data to consumers such as SageMaker, Rekognition or other services to apply Machine learning and video processing</li>
+</ul>

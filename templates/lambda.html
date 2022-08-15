@@ -1,0 +1,62 @@
+<style>
+
+h1{
+font-family: Arial, Helvetica, sans-serif;
+color: orange;
+
+}
+
+h2{
+
+font-family: lucinda;
+color: orange;
+
+}
+
+li{
+
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+font-size: 20px;
+
+}
+
+</style>
+
+<body>
+
+<title>Lambda</title>
+
+<center>
+<h1>Lambda</h1>
+    </center>
+
+<center>
+<a href="https://aws.amazon.com/lambda/"><img src=https://imgs.search.brave.com/27rd8BVyGabpEOweBpm5srlM1eTAuKWeOJD5wULo-kw/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5T/ZlZHUWlfbWk3YmNj/RlNjQW8tU1VBSGFI/YSZwaWQ9QXBp>
+</a>
+
+        <h2>Lambda key points:</h2>
+
+<ul>
+    <li>Lambda functions are serverless functions that run in the cloud. Function code runs without provisioning and managing servers.</li>
+    <br>
+    <li>Run tasks that last for up to 15 minutes where the os environment doesn't need customization. Otherwise, use Fargate.</li>
+    <br>
+    <li>There are 7 runtime language environments officially supported by Lambda: Ruby, Python, Go, Node.js, Java, PowerSchool, C#</li>
+    <br>
+    <li>A Cold Start is when a Lambda function has not been recently executed. This means that there will be a delay</li>
+    <br>
+    <li>Can be triggered via from SDK or via services like S3, DynamoDB, API Gateway (that run in no VPC). However, to interact directly with some services, Lambda function needs to be in same VPC as the other service.</li>
+    <br>
+    <li>You can adjust the duration timeout for up to 15 mins and memory up to 3008 MB</li>
+    <br>
+    <li>Lambda can scale up to 1000 concurrent functions in seconds. 1000 is the default, but AWS Service Limit Increase will allow this metric to be raised.</li>
+    <br>
+    <li>Handler is the method in your function code that processes events. When your function is invoked, Lambda runs the handler method. When the handler exits or returns a response, it becomes available to handle another event.</li>
+</ul>
+
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="spFrame62f59bcea38e7" src="https://www.sporcle.com/framed/?v=8&pm&gid=26e6a51af227&fid=62f59bcea38e7&width=920" style="width:100%;"></iframe><script type="text/javascript" src="https://www.sporcle.com/embed/embed.js?v=62f59bcea38e7"></script>
+
+<iframe src="https://quizlet.com/510151160/flashcards/embed?i=46nell&x=1jj1" height="500" width="100%" style="border:0"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lE4D2js8QZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

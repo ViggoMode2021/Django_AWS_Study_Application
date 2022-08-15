@@ -1,0 +1,72 @@
+<style>
+
+h1{
+font-family: Arial, Helvetica, sans-serif;
+color: orange;
+
+}
+
+h2{
+
+font-family: lucinda;
+color: orange;
+
+}
+
+li{
+
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+font-size: 20px;
+
+}
+
+</style>
+
+<title>Elastic Beanstalk</title>
+
+<body>
+
+<center>
+<h1>Elastic Beanstalk</h1>
+    </center>
+
+<center>
+<a href="https://aws.amazon.com/elasticbeanstalk/"><img src=https://imgs.search.brave.com/e7prceAbOwjpw6jhpAIK87mWstih8Bzuan7DNtFOP7c/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4z/c0xTSUZiNzFUendZ/QWdFQmhiaDNnSGFF/SyZwaWQ9QXBp>
+<a/></center>
+
+    <h2>Elastic Beanstalk key points:</h2>
+
+<ul>
+    <li>Handles deployment, load balancing, capacity, auto-scaling, and health monitoring of applications</li>
+    <br>
+    <li>Free to use, only pay for the provisioned infrastructure (EC2, ALB etc.)</li>
+    <br>
+    <li>Supports runtimes: Docker, Python, Go, Ruby, Java, Node.js, .NET, PHP</li>
+    <br>
+    <li>Application projects need a .ebextensions folder placed at the root of the projects. This folder contains necessary configuration files.</li>
+    <br>
+    <li>Two different environment types to launch: Web or Worker Environments</li>
+    <br>
+    <li>Web Environments can be Single-Instance or Load-Balanced<br><br>
+     • Single-Instance Env launches a single EC2 instance, an EIP is assigned to the EC2<br><br>
+     • Load Balanced Env launch EC2s behind an ELB managed by an ASG</li><br>
+    <br><br>
+    <li>Worker Environments create an SQS queue, install the SQS daemon on the EC2 instances, and have an ASG
+    policy, which will add or remove instances based on queue size.</li><br>
+    <br><br>
+    <li>EB has the following deployment policies:<br>
+     • All at once: takes all servers out-of-service, applies changes, puts servers back-in-service. Fast, but has application downtime.<br><br>
+     • Rolling: updates servers in batches, reduced capacity based on batch size. This policy needs an ELB and cannot be done on single instance environments.<br><br>
+     • Rolling with Additional Batch: Adds new servers in batches to replace old ones.  This policy needs an ELB and cannot be done on single instance environments. This policy never reduces application capacity.<br><br>
+     • Immutable creates same number of servers, switches traffic to new servers, and then removes old servers.</li>
+    <br><br>
+    <li>In-Place deployment is when deployment occurs within the environment. All deployment policies are In-Place.</li>
+    <br><br>
+    <li>Blue/Green is when deployment swaps environments outside an environment. Blue/Green is recommended when there are external resources (i.e. - An RDS db instance)</li>
+</ul>
+
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="spFrame62f597cd29c0f" src="https://www.sporcle.com/framed/?v=8&pm&gid=26ecf622f425&fid=62f597cd29c0f&width=920" style="width:100%;"></iframe><script type="text/javascript" src="https://www.sporcle.com/embed/embed.js?v=62f597cd29c0f"></script>
+
+<iframe src="https://quizlet.com/714766269/flashcards/embed?i=46nell&x=1jj1" height="500" width="100%" style="border:0"></iframe>
+

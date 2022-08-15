@@ -1,0 +1,65 @@
+<style>
+
+h1{
+
+font-family: Arial, Helvetica, sans-serif;
+color: orange;
+
+}
+
+h2{
+
+font-family: lucinda;
+color: orange;
+
+}
+
+li{
+
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+font-size: 20px;
+
+}
+
+</style>
+
+<body>
+
+<center>
+<h1>CloudFormation</h1>
+    </center>
+
+<center>
+<a href="https://aws.amazon.com/cloudformation/"><img src="https://imgs.search.brave.com/Y0Rzu6hU_r-ofMghuWvJbbCocX5Glxy6CWhsmN8b4rw/rs:fit:632:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5W/RkZkWTJGb01NaFI3/eV93OWhZMWxRSGFG/aiZwaWQ9QXBp" alt="Girl in a jacket">
+</a></center>
+
+<h2>CloudFormation key points:</h2>
+
+<ul>
+    <li>Used to provision AWS resources with "Infrastructure as Code" (think Terraform).</li>
+    <li>Write templates in either JSON or YAML formats (preferred by most).</li>
+    <li>Stacks refer to a group of resources created by a particular template.</li>
+    <li>Templates larger than 51,200 bytes (0.05 MB) are too large to upload directly, and must be imported into CloudFormation via an S3 bucket.</li>
+    <li>NestedStacks allow users to create smaller reusable templates and use them together in a larger template.</li>
+    <li>Stack deployment error will show the message "ROLLBACK_IN_PROGRESS".</li>
+    <li>Templates need to have at least one Resource defined under the Resource section in order to be valid.</li>
+</ul>
+
+<h2>CloudFormation template sections:</h2>
+<ul>
+    <li>MetaData: extra information about the template</li>
+    <li>Description: a description of the template's purpose</li>
+    <li>Parameters: how to implement user input into a template</li>
+    <li>Transforms: applies macros</li>
+    <li>Outputs: values used to be imported into other stacks</li>
+    <li>Mappings: maps keys to values</li>
+    <li>Resources: defines resources to be provisioned, at least one resource is mandatory</li>
+    <li>Conditions: conditional expression for whether resources or properties are created</li>
+</ul>
+
+<iframe frameborder="0" scrolling="no" marginheight="0" align="right" marginwidth="0" id="spFrame62f52fc2aeae8" src="https://www.sporcle.com/framed/?v=8&pm&gid=265401a4f671&fid=62f52fc2aeae8&width=920" style="width:100%;"></iframe><script type="text/javascript" src="https://www.sporcle.com/embed/embed.js?v=62f52fc2aeae8"></script>
+<br>
+<br>
+<iframe src="https://quizlet.com/714863767/flashcards/embed?i=46nell&x=1jj1" height="500" width="100%" style="border:0"></iframe>
+</body>
