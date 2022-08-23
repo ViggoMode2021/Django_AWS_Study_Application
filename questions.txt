@@ -1,0 +1,104 @@
+###### General networking: ######
+
+What is the difference between TCP (Transmission Control) and UDP (User Datagram) connections?
+
+        TCP connections: Are more secure, yet slower than UDP. TCP links transmitter to receiver until data can be transmitted.
+        Receiver retrieves data packets (segments) and send back data if lost in transit. TCP monitors error packages and track them in order to
+        prevent data from being lost or corrupted. Lies between application and network layers. TCP header size is 20 - 60 bytes.
+        Sends acknowledgement. SYN - client to server. ACK - server to client. SYN-ACK - acknowledgement of the SYN-ACK. This is
+        commonly referred to as 'three-way handshake'. TCP is more common and HTTP is built on TCP.
+
+        UDP 'connections': Are less secure, yet faster than TCP. UDP is connectionless. There is no acknowledgement when data
+        delivery is done. UDP is used for gaming, streaming and applications that require lightning fast communication.
+
+What is the OSI (Open Systems Interconnection) model?
+
+        Layer 7 (application): High level protocol for resource sharing (HTTP) or remote file access.
+
+        Layer 6 (presentation): Translation of data between a networking service and an application: character encoding, data compression,
+        and encryption/decryption.
+
+        Layer 5 (session): Continuous exchange of information in the form of back and forth transmission between two nodes.
+
+        Layer 4 (transport): Reliable transmission of data segments between points on a network, including segmentation, acknowledgement,
+        and multiplexing. TCP and UDP.
+
+        Layer 3 (network): Structuring and managing a multi-node network, including addressing routing and traffic control.
+
+        Layer 2 (data link): Transmission of data frames between two nodes connected by a physical layer.
+
+        Layer 1 (physical): Transmission and reception of raw bit streams over a physical medium. Hardware.
+
+What happens when you visit a website?
+
+        1. Web browser contacts DNS server and translates domain name address back into IP address of the web server.
+
+        2. Browser will use IP address returned by DNS and connect to port 80 on web server using TCP.
+
+        3. Once browser and webserver are connected, browser will retrieve the HTML code of the requested page.
+
+        4. Once browser receives HTML code, it will render code onto browser window.
+
+        5. When window is closed, the connection will end.
+
+What is the difference between A name and C name records?
+
+        A NAME record: Contains information about which IP address is associated with a domain.
+
+        CNAME record: Contains information about aliases to web addresses. For example: example.com for www.example.com
+
+What is a public subnet?
+
+        A public subnet is a subnet that is associated with a Route Table that has a route to an Internet Gateway. The
+        public subnet can then access the internet.
+
+What is a private subnet?
+
+        A private subnet is a subnet associated with a route table that doesn't have a route to an internet gateway. The
+        private subnet cannot communicate with the public internet. AWS resource within the same VPC CIDR block can
+        communicate via their private IP addresses. However, resources in a private subnet can access the internet
+        with an Igw.
+
+------------------------------------------------------------------------------------------------------------------------
+
+###### General encryption: ######
+
+What is the difference between symmetric and asymmetric encryption?
+
+        Symmetric encryption: Uses a single key to encrypt and decrypt info. Faster than asymmetric but must be shared
+        with the recipient, which means that they have the possibility of getting stolen.
+
+        Asymmetric encryption: Uses two keys: public and private key. Uses more resources and more efficient for small data.
+
+        Envelope encryption: Encrypt plaintext data with a data key, encrypting data key with another key.
+
+------------------------------------------------------------------------------------------------------------------------
+
+###### Solutions Architect interview: ######
+
+What is the difference between an IAM role and an IAM policy?
+
+         IAM role: An IAM role is an identity created in AWS and be assigned specific permissions.
+
+         IAM policy: An IAM policy is a document with a set of rules. Policies are attached to IAM identities like Users,
+         Groups, and Roles.
+
+What is the difference between Aurora and RDS?
+
+         Aurora is reliable and fault-tolerant by design. DB storage is separate from instances and data has 6 copies to
+         3 AZs.
+
+         RDS is similar to installing a db engine on EC2 and is not highly available by default.
+
+------------------------------------------------------------------------------------------------------------------------
+
+###### Interview notes: ######
+
+
+
+
+
+
+
+
+
