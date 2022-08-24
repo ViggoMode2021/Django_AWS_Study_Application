@@ -6,6 +6,9 @@ def home(request):
 def ec_2(request):
     return render(request, 'blog/ec_2.html', {'title': 'EC2 - Elastic Compute Cloud'})
 
+def ecs_fargate(request):
+    return render(request, 'blog/ecs_fargate.html', {'title': 'ECS + Fargate'})
+
 def elastic_beanstalk(request):
     return render(request, 'blog/elastic_beanstalk.html', {'title': 'Elastic Beanstalk'})
 
