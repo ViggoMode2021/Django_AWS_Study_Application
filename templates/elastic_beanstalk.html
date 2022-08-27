@@ -51,11 +51,11 @@ font-size: 20px;
     <li>Web Environments can be Single-Instance or Load-Balanced<br><br>
      • Single-Instance Env launches a single EC2 instance, an EIP is assigned to the EC2<br><br>
      • Load Balanced Env launch EC2s behind an ELB managed by an ASG</li><br>
-    <br><br>
+    <br>
     <li>Worker Environments create an SQS queue, install the SQS daemon on the EC2 instances, and have an ASG
     policy, which will add or remove instances based on queue size.</li><br>
-    <br><br>
-    <li>EB has the following deployment policies:<br>
+    <br>
+    <li>EB has the following deployment policies:<br><br>
      • All at once: takes all servers out-of-service, applies changes, puts servers back-in-service. Fast, but has application downtime.<br><br>
      • Rolling: updates servers in batches, reduced capacity based on batch size. This policy needs an ELB and cannot be done on single instance environments.<br><br>
      • Rolling with Additional Batch: Adds new servers in batches to replace old ones.  This policy needs an ELB and cannot be done on single instance environments. This policy never reduces application capacity.<br><br>
@@ -69,4 +69,9 @@ font-size: 20px;
 <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="spFrame62f597cd29c0f" src="https://www.sporcle.com/framed/?v=8&pm&gid=26ecf622f425&fid=62f597cd29c0f&width=920" style="width:100%;"></iframe><script type="text/javascript" src="https://www.sporcle.com/embed/embed.js?v=62f597cd29c0f"></script>
 
 <iframe src="https://quizlet.com/714766269/flashcards/embed?i=46nell&x=1jj1" height="500" width="100%" style="border:0"></iframe>
+<br>
 
+<center>
+    <h2>Deploy Django app to Elastic Beanstalk lab:</h2>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRfywjk2dxbbKXmeDNiLRPNosHB1_cFwqILbg0yXI7QDAgL4eyipOoNki63r9s7p-5Xi2lg03HB_Bnp/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</center>
