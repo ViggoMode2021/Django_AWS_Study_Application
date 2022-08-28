@@ -21,6 +21,33 @@ font-size: 20px;
 
 }
 
+.divider {
+  display: flex;
+
+  &:before,
+  &:after {
+    content: "";
+    flex: 1;
+  }
+}
+
+.donotcross {
+  overflow: hidden;
+  align-items: center;
+  background: hsl(50, 100%, 50%);
+  color: black;
+  height: 2em;
+  line-height: 2em;
+
+  &:before,
+  &:after {
+    background: white;
+    padding: 50px 0;
+    height: 0;
+    transform: rotate(45deg);
+  }
+}
+
 </style>
 
 <title>Elastic Beanstalk</title>
@@ -34,6 +61,8 @@ font-size: 20px;
 <center>
 <a href="https://aws.amazon.com/elasticbeanstalk/"><img src=https://imgs.search.brave.com/e7prceAbOwjpw6jhpAIK87mWstih8Bzuan7DNtFOP7c/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4z/c0xTSUZiNzFUendZ/QWdFQmhiaDNnSGFF/SyZwaWQ9QXBp>
 <a/></center>
+
+<h2 class="divider donotcross" contenteditable></h2>
 
     <h2>Elastic Beanstalk key points:</h2>
 
@@ -66,10 +95,16 @@ font-size: 20px;
     <li>Blue/Green is when deployment swaps environments outside an environment. Blue/Green is recommended when there are external resources (i.e. - An RDS db instance)</li>
 </ul>
 
+<h2 class="divider donotcross" contenteditable></h2>
+
 <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="spFrame62f597cd29c0f" src="https://www.sporcle.com/framed/?v=8&pm&gid=26ecf622f425&fid=62f597cd29c0f&width=920" style="width:100%;"></iframe><script type="text/javascript" src="https://www.sporcle.com/embed/embed.js?v=62f597cd29c0f"></script>
+
+<h2 class="divider donotcross" contenteditable></h2>
 
 <iframe src="https://quizlet.com/714766269/flashcards/embed?i=46nell&x=1jj1" height="500" width="100%" style="border:0"></iframe>
 <br>
+
+<h2 class="divider donotcross" contenteditable></h2>
 
 <center>
     <h2>Deploy Django app to Elastic Beanstalk lab:</h2>

@@ -21,6 +21,23 @@ font-size: 20px;
 
 }
 
+.donotcross {
+  overflow: hidden;
+  align-items: center;
+  background: hsl(50, 100%, 50%);
+  color: black;
+  height: 2em;
+  line-height: 2em;
+
+  &:before,
+  &:after {
+    background: white;
+    padding: 50px 0;
+    height: 0;
+    transform: rotate(45deg);
+  }
+}
+
 </style>
 
 <body>
@@ -47,5 +64,7 @@ font-size: 20px;
     <li>Symmetric keys are single keys using 256 bit encryption</li><br>
     <li>Asymmetric uses two keys (public and private)</li><br>
 </ul>
+
+        <h2 class="divider donotcross" contenteditable></h2>
 
 <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="spFrame62f5968247021" src="https://www.sporcle.com/framed/?v=8&pm&gid=26c3d3ccf5e7&fid=62f5968247021&width=920" style="width:100%;"></iframe><script type="text/javascript" src="https://www.sporcle.com/embed/embed.js?v=62f5968247021"></script>

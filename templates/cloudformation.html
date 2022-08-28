@@ -22,6 +22,23 @@ font-size: 20px;
 
 }
 
+.donotcross {
+  overflow: hidden;
+  align-items: center;
+  background: hsl(50, 100%, 50%);
+  color: black;
+  height: 2em;
+  line-height: 2em;
+
+  &:before,
+  &:after {
+    background: white;
+    padding: 50px 0;
+    height: 0;
+    transform: rotate(45deg);
+  }
+}
+
 </style>
 
 <body>
@@ -46,6 +63,8 @@ font-size: 20px;
     <li>Templates need to have at least one Resource defined under the Resource section in order to be valid.</li>
 </ul>
 
+        <h2 class="divider donotcross" contenteditable></h2>
+
 <h2>CloudFormation template sections:</h2>
 <ul>
     <li>MetaData: extra information about the template</li>
@@ -58,8 +77,12 @@ font-size: 20px;
     <li>Conditions: conditional expression for whether resources or properties are created</li>
 </ul>
 
+        <h2 class="divider donotcross" contenteditable></h2>
+
 <iframe frameborder="0" scrolling="no" marginheight="0" align="right" marginwidth="0" id="spFrame62f52fc2aeae8" src="https://www.sporcle.com/framed/?v=8&pm&gid=265401a4f671&fid=62f52fc2aeae8&width=920" style="width:100%;"></iframe><script type="text/javascript" src="https://www.sporcle.com/embed/embed.js?v=62f52fc2aeae8"></script>
+        <h2 class="divider donotcross" contenteditable></h2>
+
 <br>
-<br>
+        <h2 class="divider donotcross" contenteditable></h2>
 <iframe src="https://quizlet.com/714863767/flashcards/embed?i=46nell&x=1jj1" height="500" width="100%" style="border:0"></iframe>
 </body>
